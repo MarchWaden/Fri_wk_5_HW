@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/cats/<%=cat.id%>?_method=PUT" method="POST">
+      Name: <input type="text" name="name" value="<%=cat.name%>" placeholder="<%=cat.name%>"><br/>
+      Country: <input type="text" name="country" value="<%=cat.country%>" placeholder="<%=cat.country%>"><br/>
+      Coat: <input type="text" name="coat" value="<%=cat.coat%>" placeholder="<%=cat.coat%>"><br/>
+      Pattern: <input type="text" name="pattern" value="<%=cat.pattern%>" placeholder="<%=cat.pattern%>"><br/>
+      Image: <input type="text" name="img" value="<%=cat.img%>" placeholder="<%=cat.img%>"><br/>
+      <input type="submit" value="Submit"></input></form>
+  </body>
+</html>
